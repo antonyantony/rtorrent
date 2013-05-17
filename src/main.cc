@@ -831,9 +831,9 @@ main(int argc, char** argv) {
     int firstArg = parse_options(control, argc, argv);
 
     if (OptionParser::has_flag('n', argc, argv)) {
-      lt_log_print(torrent::LOG_WARN, "Ignoring ~/.rtorrent.rc.");
+      lt_log_print(torrent::LOG_WARN, "Ignoring ./.rtorrent.rc.");
     } else {
-      rpc::parse_command_single(rpc::make_target(), "try_import = ~/.rtorrent.rc");
+      rpc::parse_command_single(rpc::make_target(), "try_import = ./.rtorrent.rc");
     }
 
     control->initialize();
