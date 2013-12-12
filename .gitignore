@@ -18,6 +18,7 @@
 .libs
 aclocal.m4
 autom4te.cache
+compile
 config.h
 config.guess
 config.status
@@ -64,3 +65,4 @@ TAGS
 src/rtorrent
 test/rtorrentTest
 test-driver
+test/rtorrentTest.trs
